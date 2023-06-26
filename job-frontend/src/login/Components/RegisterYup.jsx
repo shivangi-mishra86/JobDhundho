@@ -36,7 +36,7 @@ const Register = (props) => {
   const formSubmitHandler = (values, setSubmitting) => {
     setShowSpinner(true);
     axios
-      .post(`http://localhost:8080/auth/register`, { ...values })
+      .post(`https://jobassignmnet.onrender.com/auth/register`, { ...values })
       .then((res) => {
         setShowSpinner(false);
         toast.success(res.data.message, {

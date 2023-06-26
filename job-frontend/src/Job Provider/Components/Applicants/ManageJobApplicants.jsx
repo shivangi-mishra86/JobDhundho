@@ -25,7 +25,7 @@ const ManageJobApplicants = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/provider/view-applicants/${jobId}`, {
+      .get(`https://jobassignmnet.onrender.com/provider/view-applicants/${jobId}`, {
         headers: {
           Authorization: "Bearer " + token,
         },
