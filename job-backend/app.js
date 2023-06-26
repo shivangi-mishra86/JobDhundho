@@ -12,11 +12,9 @@ const userRoutes = require("./routes/user");
 const app = express();
 app.use(cors());
 
-const MONGO_URI = `mongodb://localhost:27017/jobSeeker`;
+const MONGO_URI = `mongodb+srv://shivangi:C6wIflIfHgHCud4u@cluster0.q9jpuau.mongodb.net/?retryWrites=true&w=majority`;
 
 app.use(bodyParser.json());
-
-// app.use("/resumes", express.static(path.join(__dirname, "resumes")));
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
