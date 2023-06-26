@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const path = require("path");
@@ -9,6 +10,7 @@ const providerRoutes = require("./routes/provider");
 const userRoutes = require("./routes/user");
 
 const app = express();
+app.use(cors());
 
 const MONGO_URI = `mongodb://localhost:27017/jobSeeker`;
 
